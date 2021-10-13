@@ -69,6 +69,10 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
   </h3>
 </div>       
 &nbsp;
+    
+<br />
+
+![Whitelist install demo gif](https://raw.githubusercontent.com/ijhuang/whitelist/master/images/whitelist.gif)
 
 <br />
 
