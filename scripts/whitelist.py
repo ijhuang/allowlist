@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 #
-# Project homepage: https://github.com/anudeepND/whitelist
-# Licence: https://github.com/anudeepND/whitelist/blob/master/LICENSE
-# Created by Anudeep
+# Project homepage: https://github.com/ijhuang/allowlist
+# Licence: https://github.com/ijhuang/allowlist/blob/master/LICENSE
 # ================================================================================
 import os
 import argparse
@@ -69,8 +68,8 @@ if args.dir:
 else:
     pihole_location = r'/etc/pihole'
 
-whitelist_remote_url = 'https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt'
-remote_sql_url = 'https://raw.githubusercontent.com/anudeepND/whitelist/master/scripts/domains.sql'
+whitelist_remote_url = 'https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/whitelist.txt'
+remote_sql_url = 'https://raw.githubusercontent.com/ijhuang/allowlist/master/scripts/domains.sql'
 gravity_whitelist_location = os.path.join(pihole_location, 'whitelist.txt')
 gravity_db_location = os.path.join(pihole_location, 'gravity.db')
 anudeep_whitelist_location = os.path.join(pihole_location, 'anudeep-whitelist.txt')
@@ -345,8 +344,7 @@ if db_exists:
         print('\n')
         print('Done. Happy ad-blocking :)')
         print('\n')
-        print('Star me on GitHub: https://github.com/anudeepND/whitelist')
-        print('Buy me a coffee: https://paypal.me/anudeepND')
+        print('Star me on GitHub: https://github.com/ijhuang/allowlist')
         print('\n')
 
 else:
@@ -388,6 +386,5 @@ else:
     restart_pihole(args.docker)
     print('[i] Done. Happy ad-blocking :)')
     print('\n')
-    print('Star me on GitHub: https://github.com/anudeepND/whitelist')
-    print('Buy me a coffee: https://paypal.me/anudeepND')
+    print('Star me on GitHub: https://github.com/ijhuang/allowlist')
     print('\n')
