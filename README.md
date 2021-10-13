@@ -24,7 +24,7 @@
   <a href="https://github.com/ijhuang/allowlist/issues" > 
     <img src="https://img.shields.io/github/issues-raw/ijhuang/allowlist?label=Open%20Issues&color=critical" alt="open issues" >
   <a/>
-  <a href="https://github.com/aijhuang/allowlist/issues?q=is%3Aissue+is%3Aclosed" > 
+  <a href="https://github.com/ijhuang/allowlist/issues?q=is%3Aissue+is%3Aclosed" > 
     <img src="https://img.shields.io/github/issues-closed-raw/ijhuang/allowlist?label=Closed%20Issues&color=inactive" alt="closed issues" >
   <a/>
   <a href="https://github.com/ijhuang/allowlist/graphs/contributors" > 
@@ -44,7 +44,7 @@
   
 A robust collection of commonly allow-listed websites borrowed from various sources including Pi-Hole subreddit, Pi-Hole forum, Pi-Hole GitHub repository and more!
 Add these domains to your Pi-Hole setup by running a script or manually and make your setup __trouble-free!__
-Want to report a new domain? Want to report existing one? Feel free to file an [issue](https://github.com/anudeepND/ijhuang/allowlist/issues).
+Want to report a new domain? Want to report existing one? Feel free to file an [issue](https://github.com/ijhuang/allowlist/issues).
 
 </div>
 
