@@ -72,7 +72,7 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
     
 <br />
 
-![Whitelist install demo gif](https://raw.githubusercontent.com/ijhuang/whitelist/master/images/whitelist.gif)
+![Allowlist install demo gif](https://raw.githubusercontent.com/ijhuang/allowlist/master/images/whitelist.gif)
 
 <br />
 
@@ -107,9 +107,9 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
 
 | File Name | Domain Count | Description | Update Frequency | Raw Link |
 |:-:|:-:|:-:|:-:|:-:|
-| whitelist.txt | 191 | This file contain domains that are __safe__ to whitelist i.e. it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on. If you want to report additional domain feel free to file an [issue](https://github.com/ijhuang/allowlist/issues). | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/whitelist.txt) |
-| referral-sites.txt | 75 | People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are either trackers or ads) to be whitelisted to work properly. This file contains some analytics and ad serving sites like __doubleclick.net__ and others. __If you don't know what these services are, stay away from this list.__ | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/referral-sites.txt) |
-| optional-list.txt | -- | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. Currently there is no script for this list, you have to add domains manually to your Pi-Hole. | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/optional-list.txt) |
+| whitelist.txt | 191 | This file contain domains that are __safe__ to allowlist i.e. it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on. If you want to report additional domain feel free to file an [issue](https://github.com/ijhuang/allowlist/issues). | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/whitelist.txt) |
+| referral-sites.txt | 75 | People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are either trackers or ads) to be allowlisted to work properly. This file contains some analytics and ad serving sites like __doubleclick.net__ and others. __If you don't know what these services are, stay away from this list.__ | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/referral-sites.txt) |
+| optional-list.txt | -- | This file contain domains that are needed to be allowlisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. Currently there is no script for this list, you have to add domains manually to your Pi-Hole. | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/optional-list.txt) |
 
 
 ## <ins>Installation</ins>
@@ -120,18 +120,18 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
 
 ```Shell
 git clone https://github.com/ijhuang/allowlist.git
-sudo python3 whitelist/scripts/whitelist.py
+sudo python3 allowlist/scripts/whitelist.py
 ```
 
 #### For referral-sites.txt
 
 ```Shell
 git clone https://github.com/ijhuang/allowlist.git
-cd whitelist/scripts
+cd allowlist/scripts
 sudo ./referral.sh
 ```
 
-If you are using Pi-hole 5.0 or later, the comment field has a unique string - `qjz9zk` to uniquely identify the domains added by this script so the user can remove the domains without affecting other whitelisted sites.
+If you are using Pi-hole 5.0 or later, the comment field has a unique string - `qjz9zk` to uniquely identify the domains added by this script so the user can remove the domains without affecting other allowlisted sites.
 
 #### For optional-list.txt
 You can add it manually depending upon the service you use.
@@ -142,12 +142,12 @@ You can add it manually depending upon the service you use.
 
 ```Shell
 git clone https://github.com/ijhuang/allowlist.git
-sudo python3 whitelist/scripts/whitelist.py
+sudo python3 allowlist/scripts/whitelist.py
 ```
 
 ```Shell
 git clone https://github.com/ijhuang/allowlist.git
-cd whitelist/scripts
+cd allowlist/scripts
 sudo ./referral.sh
 ```
 
@@ -162,19 +162,19 @@ sudo ./referral.sh
 
 ```Shell
 git clone https://github.com/ijhuang/allowlist.git
-sudo python3 whitelist/scripts/whitelist.py --dir /home/docker/pihole/etc-pihole/ --docker
+sudo python3 allowlist/scripts/whitelist.py --dir /home/docker/pihole/etc-pihole/ --docker
 ```
 
 ```Shell
 git clone https://github.com/ijhuang/allowlist.git
-cd whitelist/scripts
+cd allowlist/scripts
 sudo ./referral.sh --dir /home/docker/pihole/etc-pihole/ --docker
 ```
-__Note: You don't have to clone the repo every time you need to update whitelist file. Navigate to `whitelist/scripts` and run it again `sudo python3 whitelist.py__
+__Note: You don't have to clone the repo every time you need to update allowlist file. Navigate to `allowlist/scripts` and run it again `sudo python3 whitelist.py__
 
 ## <ins>Uninstall</ins>
 
-![Whitelist uninstall demo gif](https://raw.githubusercontent.com/ijhuang/allowlist/master/images/uninstall.gif)
+![Allowlist uninstall demo gif](https://raw.githubusercontent.com/ijhuang/allowlist/master/images/uninstall.gif)
 
 As mentioned earlier, the unique string (`qjz9zk`) will come in handy while removing the domains from the database. It uses LIKE operator of the SQLite to match the wildcard string present in the comment section.
 
@@ -182,7 +182,7 @@ As mentioned earlier, the unique string (`qjz9zk`) will come in handy while remo
 DELETE FROM domainlist WHERE type = 0 AND comment LIKE '%qjz9zk%'
 ```
 
-This statement will remove the domain only if it is present in the exact whitelist section and having the string `qjz9zk`. Domains in the regex list will not be removed by this script.
+This statement will remove the domain only if it is present in the exact allowlist section and having the string `qjz9zk`. Domains in the regex list will not be removed by this script.
 
 The older version of the Pi-hole uses a simple text file to store the entries. In this case the script will match the domains present in your Pi-hole to the domains present in the GitHub repo and removes them accordingly.
 
@@ -206,13 +206,13 @@ sudo nano /etc/crontab
 Add this line at the end of the file:
 
 ```Text
-0 1 * * */7     root    /opt/whitelist/scripts/whitelist.py
+0 1 * * */7     root    /opt/allowlist/scripts/whitelist.py
 ```
 
 CTRL + X then Y and Enter
 
 ```Shell
-sudo python3 whitelist/scripts/whitelist.py
+sudo python3 allowlist/scripts/whitelist.py
 ```
 
 ## <ins>How do I determine an ad domain?</ins>
