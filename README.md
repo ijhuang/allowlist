@@ -1,5 +1,5 @@
 <div align="center">  
-  <img width="550" alt="Whitelist logo" src="https://raw.githubusercontent.com/anudeepND/whitelist/master/images/logo.png">
+  <h1>Allowlist</hi>
 </div>
 
 <br />
@@ -10,72 +10,65 @@
     <img src="https://img.shields.io/badge/Python-v3-9cf" alt="repo size" >
   <a/>
   <a href="#" > 
-    <img src="https://img.shields.io/github/repo-size/anudeepnd/whitelist?label=Repo%20Size&color=orange" alt="repo size" >
+    <img src="https://img.shields.io/github/repo-size/ijhuang/allowlist?label=Repo%20Size&color=orange" alt="repo size" >
   <a/>
    <a href="#" > 
-    <img src="https://img.shields.io/github/stars/anudeepnd/whitelist?label=Stars" alt="stars" >
+    <img src="https://img.shields.io/github/stars/ijhuang/allowlist?label=Stars" alt="stars" >
   <a/>   
   <a href="#" > 
-    <img src="https://img.shields.io/github/last-commit/anudeepnd/whitelist?label=Last%20Updated" alt="last updated" >
+    <img src="https://img.shields.io/github/last-commit/ijhuang/allowlist?label=Last%20Updated" alt="last updated" >
   <a/>
-   <a href="https://github.com/anudeepND/whitelist/commits/master" > 
-    <img src="https://img.shields.io/github/commit-activity/y/anudeepnd/whitelist?label=Commit%20Activity" alt="commit activity" >
+   <a href="https://github.com/ijhuang/allowlist/commits/master" > 
+    <img src="https://img.shields.io/github/commit-activity/y/ijhuang/allowlist?label=Commit%20Activity" alt="commit activity" >
   <a/>
-  <a href="https://github.com/anudeepND/whitelist/issues" > 
-    <img src="https://img.shields.io/github/issues-raw/anudeepnd/whitelist?label=Open%20Issues&color=critical" alt="open issues" >
+  <a href="https://github.com/ijhuang/allowlist/issues" > 
+    <img src="https://img.shields.io/github/issues-raw/ijhuang/allowlist?label=Open%20Issues&color=critical" alt="open issues" >
   <a/>
-  <a href="https://github.com/anudeepND/whitelist/issues?q=is%3Aissue+is%3Aclosed" > 
-    <img src="https://img.shields.io/github/issues-closed-raw/anudeepnd/whitelist?label=Closed%20Issues&color=inactive" alt="closed issues" >
+  <a href="https://github.com/aijhuang/allowlist/issues?q=is%3Aissue+is%3Aclosed" > 
+    <img src="https://img.shields.io/github/issues-closed-raw/ijhuang/allowlist?label=Closed%20Issues&color=inactive" alt="closed issues" >
   <a/>
-  <a href="https://github.com/anudeepND/whitelist/graphs/contributors" > 
-    <img src="https://img.shields.io/github/contributors/anudeepnd/whitelist?label=Contributors&color=yellow" alt="contributors" >
+  <a href="https://github.com/ijhuang/allowlist/graphs/contributors" > 
+    <img src="https://img.shields.io/github/contributors/ijhuang/allowlist?label=Contributors&color=yellow" alt="contributors" >
   <a/>
-  <a href="https://github.com/anudeepND/whitelist/blob/master/LICENSE" > 
-    <img src="https://img.shields.io/github/license/anudeepnd/whitelist?label=License&color=blueviolet" alt="license" >
+  <a href="https://github.com/ijhuang/allowlist/blob/master/LICENSE" > 
+    <img src="https://img.shields.io/github/license/ijhuang/allowlist?label=License&color=blueviolet" alt="license" >
   <a/>
 </div>
     
 <div align="center">
-  <h1>Collection of commonly white listed domains for <br> Pi-Hole®</h1> 
+  <h1>Collection of commonly allow-listed domains for <br> Pi-Hole®</h1> 
 </div>
 
 </div>
 <div align="center">
   
-A robust collection of commonly white listed websites borrowed from various sources including Pi-Hole subreddit, Pi-Hole forum, Pi-Hole GitHub repository and more!
+A robust collection of commonly allow-listed websites borrowed from various sources including Pi-Hole subreddit, Pi-Hole forum, Pi-Hole GitHub repository and more!
 Add these domains to your Pi-Hole setup by running a script or manually and make your setup __trouble-free!__
-Want to report a new domain? Want to report existing one? Feel free to file an [issue](https://github.com/anudeepND/whitelist/issues).
+Want to report a new domain? Want to report existing one? Feel free to file an [issue](https://github.com/anudeepND/ijhuang/allowlist/issues).
 
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://github.com/anudeepND/whitelist/releases">
+    <a href="https://github.com/ijhuang/allowlist/releases">
       Releases
     </a>
     <span> | </span>
-    <a href="https://github.com/anudeepND/whitelist/pulse/monthly">
+    <a href="https://github.com/ijhuang/allowlist/pulse/monthly">
       Pulse
     </a>
     <span> | </span>
-    <a href="https://github.com/anudeepND/whitelist/issues">
+    <a href="https://github.com/ijhuang/allowlist/issues">
       Submit Issue
     </a>
     <span> | </span>
-    <a href="https://github.com/anudeepND/whitelist/pulls">
+    <a href="https://github.com/ijhuang/allowlist/pulls">
       Submit PR
     </a>
     <span> | </span>
-    <a href="https://www.paypal.com/paypalme/anudeepND">
-      Donate
-    </a>
   </h3>
 </div>       
 &nbsp;
-
-<br />
-
-![Whitelist install demo gif](https://raw.githubusercontent.com/anudeepND/whitelist/master/images/whitelist.gif)
 
 <br />
 
@@ -110,9 +103,9 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
 
 | File Name | Domain Count | Description | Update Frequency | Raw Link |
 |:-:|:-:|:-:|:-:|:-:|
-| whitelist.txt | 191 | This file contain domains that are __safe__ to whitelist i.e. it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on. If you want to report additional domain feel free to file an [issue](https://github.com/anudeepND/whitelist/issues). | Occasionally | [link](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt) |
-| referral-sites.txt | 75 | People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are either trackers or ads) to be whitelisted to work properly. This file contains some analytics and ad serving sites like __doubleclick.net__ and others. __If you don't know what these services are, stay away from this list.__ | Occasionally | [link](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt) |
-| optional-list.txt | -- | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. Currently there is no script for this list, you have to add domains manually to your Pi-Hole. | Occasionally | [link](https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt) |
+| whitelist.txt | 191 | This file contain domains that are __safe__ to whitelist i.e. it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on. If you want to report additional domain feel free to file an [issue](https://github.com/ijhuang/allowlist/issues). | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/whitelist.txt) |
+| referral-sites.txt | 75 | People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are either trackers or ads) to be whitelisted to work properly. This file contains some analytics and ad serving sites like __doubleclick.net__ and others. __If you don't know what these services are, stay away from this list.__ | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/referral-sites.txt) |
+| optional-list.txt | -- | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. Currently there is no script for this list, you have to add domains manually to your Pi-Hole. | Occasionally | [link](https://raw.githubusercontent.com/ijhuang/allowlist/master/domains/optional-list.txt) |
 
 
 ## <ins>Installation</ins>
@@ -122,14 +115,14 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
 #### For whitelist.txt
 
 ```Shell
-git clone https://github.com/anudeepND/whitelist.git
+git clone https://github.com/ijhuang/allowlist.git
 sudo python3 whitelist/scripts/whitelist.py
 ```
 
 #### For referral-sites.txt
 
 ```Shell
-git clone https://github.com/anudeepND/whitelist.git
+git clone https://github.com/ijhuang/allowlist.git
 cd whitelist/scripts
 sudo ./referral.sh
 ```
@@ -144,12 +137,12 @@ You can add it manually depending upon the service you use.
  Access you running Pi-Hole container by `docker exec -it <container-ID> bash` and proceed with the steps given below:
 
 ```Shell
-git clone https://github.com/anudeepND/whitelist.git
+git clone https://github.com/ijhuang/allowlist.git
 sudo python3 whitelist/scripts/whitelist.py
 ```
 
 ```Shell
-git clone https://github.com/anudeepND/whitelist.git
+git clone https://github.com/ijhuang/allowlist.git
 cd whitelist/scripts
 sudo ./referral.sh
 ```
@@ -164,12 +157,12 @@ sudo ./referral.sh
  ```
 
 ```Shell
-git clone https://github.com/anudeepND/whitelist.git
+git clone https://github.com/ijhuang/allowlist.git
 sudo python3 whitelist/scripts/whitelist.py --dir /home/docker/pihole/etc-pihole/ --docker
 ```
 
 ```Shell
-git clone https://github.com/anudeepND/whitelist.git
+git clone https://github.com/ijhuang/allowlist.git
 cd whitelist/scripts
 sudo ./referral.sh --dir /home/docker/pihole/etc-pihole/ --docker
 ```
@@ -177,7 +170,7 @@ __Note: You don't have to clone the repo every time you need to update whitelist
 
 ## <ins>Uninstall</ins>
 
-![Whitelist uninstall demo gif](https://raw.githubusercontent.com/anudeepND/whitelist/master/images/uninstall.gif)
+![Whitelist uninstall demo gif](https://raw.githubusercontent.com/ijhuang/allowlist/master/images/uninstall.gif)
 
 As mentioned earlier, the unique string (`qjz9zk`) will come in handy while removing the domains from the database. It uses LIKE operator of the SQLite to match the wildcard string present in the comment section.
 
@@ -197,7 +190,7 @@ __To remove the domains:__
 
 ```Shell
 cd /opt/
-sudo git clone https://github.com/anudeepND/whitelist.git
+sudo git clone https://github.com/ijhuang/allowlist.git
 ```
 
 Make the script to run the script at 1AM on the last day of the week
@@ -223,27 +216,14 @@ sudo python3 whitelist/scripts/whitelist.py
 - __Using inbuilt Developer tool:__ For Chrome and Firefox, __`ctrl+shift+I`__ will land you in Developer tools menu.
 - __Using an Android app:__ [__`Net Guard`__](https://play.google.com/store/apps/details?id=eu.faircode.netguard) is an Android app that can be used to monitor any specific apps, works on unrooted devices too.
 
-
-## <ins>Stargazers over time</ins>
-<br />
-
-[![Stargazers over time](https://starchart.cc/anudeepND/whitelist.svg)](https://starchart.cc/anudeepND/whitelist)
-
-## <ins>Support</ins>
-Maintaining an quality open-source takes a lot of time. I have been contributing to this project over 3 years. Your support will help me to keep the project running and provide you quality service. You can also donate using UPI enabled apps such as __`PhonePe`__, __`Google Pay`__, __`Paytm`__ and more! (UPI ID: anudeepnd@ybl). If you have any queries related to PayPal or donation, you can send a DM to me on [`Twitter`](https://twitter.com/anudeepnd).  
-<div align="center">   
-  <a href="https://paypal.me/anudeepND" target="_blank"><img alt="Donate using Paypal" src="https://raw.githubusercontent.com/anudeepND/whitelist/master/images/paypal.png" width="160" height="40"></a>
-  &nbsp;
-  &nbsp;
-  <a href="https://upi.anudeep.me"><img alt="Donate using UPI apps" src="https://raw.githubusercontent.com/anudeepND/whitelist/master/images/upi.png" width="115" height="40"></a>
-</div>
-
 ## <ins>License</ins>
 
 ```Text
+Copyright for portions of project Allowlist are held by [Anudeep ND, 2020] as part of project Bar. All other copyright for project Allowlist are held by [ijhuang, 2021].
+
 MIT License
 
-Copyright (c) 2020 Anudeep ND <anudeep@protonmail.com>
+Copyright (c) 2021 ijhuang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
