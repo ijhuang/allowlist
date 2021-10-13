@@ -1,3 +1,7 @@
+# Resy email links
+link.resy.com
+
+# 2021.10.13 Fork
 7eer.net
 ad.doubleclick.net
 affiliatefuture.com
