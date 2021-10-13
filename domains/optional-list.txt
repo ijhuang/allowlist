@@ -197,6 +197,7 @@ ow.ly
 www.ow.ly
 amzn.to
 amzn.com
+t.ly
 
 # Videos not playing on  arstechnica/wired/vogue/newyorker
 # Note: ads before videos may appear after whitelisting this domain
